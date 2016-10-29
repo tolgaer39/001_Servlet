@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>001_Servlet</display-name>
+  
+  
+  
+ <!-- Servlet tagını yadık ve servlet tanımı yaptık 
+ Servlet name herhangi bir isim verdim 
+ Servlet class adı, paket ve class ismiyle aynı olmalıdır sonuna .java eklemesi yapılmaz!
+ -->
+   <servlet>
+  <servlet-name>MyServlet</servlet-name>
+  <servlet-class>Exercises1.ServletGiris</servlet-class>
+  </servlet>
+  
+  <!-- Hangi url adresi bu servleti çağıracak tanımını burada yapıyoruz.
+  Not= Url patternde / ile başlamayı unutma!!
+   --> 
+  <servlet-mapping>
+  <servlet-name>MyServlet</servlet-name>
+  <url-pattern>/giris</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
